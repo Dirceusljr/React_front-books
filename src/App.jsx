@@ -1,5 +1,16 @@
+import logo from "./assets/logo.svg";
+
 function App() {
-    return <h1>Olá, mundo!</h1>
+  return (
+    <div>
+      <header>
+        <div className="flex"> 
+          <img src={logo} alt="logo" />
+          <p><strong>Alura</strong> Books</p>
+        </div>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
