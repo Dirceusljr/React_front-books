@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gradiente: {
+          100: "#326589",
+          200: "#002F52"
+        }
+      }
+    },
   },
   plugins: [],
 }
