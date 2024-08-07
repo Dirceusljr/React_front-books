@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import Pesquisa from "./components/Pesquisa";
 
 function App() {
   return (
-    <div className=" w-screen h-screen bg-gradient-to-r from-gradiente-100 from-35% to-gradiente-200 ">
+    <div className=" w-screen h-screen bg-gradiente-cresc ">
       <Header />
+      <Pesquisa />
     </div>
   );
 }
