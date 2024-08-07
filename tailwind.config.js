@@ -9,7 +9,11 @@ export default {
       colors: {
         gradiente: {
           100: "#326589",
-          200: "#002F52"
+          200: "#002F52",
+          300: "#EBECEE",
+        },
+        texto: {
+          100: "#EB9B00"
         }
       },
       borderRadius: {
@@ -21,6 +25,9 @@ export default {
       },
       height: {
         'pesquisa': '470px'
+      },
+      boxShadow: {
+        'card': '0px 4px 4px rgba(0, 0, 0, 0.25)'
       }
     },
   },
