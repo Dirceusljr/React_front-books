@@ -1,5 +1,4 @@
 import Pesquisa from "../components/Pesquisa";
-import UltimosLancamentos from "../components/UltimosLancamentos";
 
 function Favoritos() {
   return (
