@@ -1,4 +1,6 @@
-const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "MINHA ESTANTE"];
+import { Link } from "react-router-dom";
+
+const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "ESTANTE"];
 
 const OpcoesHeader = () => {
   return (
@@ -8,7 +10,9 @@ const OpcoesHeader = () => {
           key={opcao}
           className="text-base flex justify-center items-center text-center h-full py-0 px-1.5 cursor-pointer min-w-32 "
         >
-          <p>{opcao}</p>
+          <Link to={`${opcao.toLowerCase()}`}>
+            <p>{opcao}</p>
+          </Link>
         </li>
       ))}
     </ul>
