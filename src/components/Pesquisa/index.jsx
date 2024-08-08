@@ -1,9 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Input from '../Input'
-import { livros } from './dadosPesquisa'
+import { getLivros } from '../../services/livros'
 
 const Pesquisa = () => {
     const [livrosPesquisados, setLivrosPesquisados] = useState([])
+    const [livros, setLivros] = useState([])
+
+    useEffect(() => {
+        fetchLivros()
+    }, [])
+
+    async function fetchLivros() {
+        const livrosDaApi = await getLivros()
+        setLivros(livrosDaApi)
+    }
+
   return (
     <section className='bg-gradiente-decresc text-white text-center py-20 px-0 h-pesquisa w-full '>
         <h2 className=' text-white text-4xl text-center w-full mb-10 font-bold'>Já sabe por onde começar?</h2>
